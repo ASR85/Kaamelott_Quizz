@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.Fenetre_Quizz"
+    android:background="@drawable/back3"
+    android:scaleType="centerCrop"
+    >
+
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:background="@color/design_default_color_surface"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="189dp"
+        android:text="sds"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/reponse1"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion" />
+
+    <Button
+        android:id="@+id/reponse2"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse1" />
+
+    <Button
+        android:id="@+id/reponse3"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse2" />
+
+    <Button
+        android:id="@+id/reponse4"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="182dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse3"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/QuiestCo"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="370dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
