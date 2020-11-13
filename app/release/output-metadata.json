@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.kaamelottquizz",
+  "applicationId": "com.arnaudlcelestino.kaamelottquizz",
   "variantName": "processReleaseResources",
   "elements": [
     {

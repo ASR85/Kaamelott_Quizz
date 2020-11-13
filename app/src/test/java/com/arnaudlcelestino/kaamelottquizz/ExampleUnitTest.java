@@ -1,4 +1,4 @@
-package com.example.kaamelottquizz;
+package com.arnaudlcelestino.kaamelottquizz;
 
 import org.junit.Test;
 

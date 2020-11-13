@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kaamelottquizz">
+    package="com.arnaudlcelestino.kaamelottquizz">
 
     <application
         android:allowBackup="true"
@@ -9,24 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KaamelottQuizz">
-        <activity android:name=".controller.splashScreen">
+        <activity android:name="com.arnaudlcelestino.kaamelottquizz.controller.splashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SPL" />
         <activity
-            android:name=".controller.Fenetre_Quizz"
+            android:name="com.arnaudlcelestino.kaamelottquizz.controller.Fenetre_Quizz"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".controller.MainActivity"
+            android:name="com.arnaudlcelestino.kaamelottquizz.controller.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

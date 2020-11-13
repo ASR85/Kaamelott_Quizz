@@ -1,6 +1,5 @@
-package com.example.kaamelottquizz.controller;
+package com.arnaudlcelestino.kaamelottquizz.controller;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,14 +7,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.kaamelottquizz.R;
-import com.example.kaamelottquizz.model.Utilisateur;
+import com.arnaudlcelestino.kaamelottquizz.R;
+import com.arnaudlcelestino.kaamelottquizz.model.Utilisateur;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,17 +21,17 @@ public class MainActivity extends AppCompatActivity {
     private EditText editT_Joueur;
     private Button b_jouer;
     private Utilisateur mUtilisateur;
-    public static final int fenetreJeuCode=0;
+    public static final int fenetreJeuCode = 0;
     private SharedPreferences mesPreferences; //Sert à stocker des données dans la mémoire du tel
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (fenetreJeuCode ==requestCode && RESULT_OK == resultCode){
+        if (fenetreJeuCode == requestCode && RESULT_OK == resultCode) {
             int score = data.getIntExtra(Fenetre_Quizz.BUNDLE_EXTRA_SCORE, 0);
             //On récupère le score et on le stock dans les préférences
-            mesPreferences.edit().putInt("Score",score).apply();
+            mesPreferences.edit().putInt("Score", score).apply();
 
         }
     }
@@ -61,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                b_jouer.setEnabled(s.toString().length()>2);
+                b_jouer.setEnabled(s.toString().length() > 2);
 
             }
 
@@ -76,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String prenom = editT_Joueur.getText().toString();
                 mUtilisateur.setmPrenom(prenom);
-                mesPreferences.edit().putString("Prenom",mUtilisateur.getmprenom()).apply();
-                Intent fenetreJeux = new Intent(MainActivity.this,Fenetre_Quizz.class);
+                mesPreferences.edit().putString("Prenom", mUtilisateur.getmprenom()).apply();
+                Intent fenetreJeux = new Intent(MainActivity.this, Fenetre_Quizz.class);
                 startActivity(fenetreJeux);
                 startActivityForResult(fenetreJeux, fenetreJeuCode);
 

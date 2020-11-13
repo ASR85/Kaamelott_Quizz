@@ -1,12 +1,12 @@
-package com.example.kaamelottquizz.model;
+package com.arnaudlcelestino.kaamelottquizz.model;
 
 import java.util.List;
 
 public class Question {
 
-   private String mQuestion;
-   private List<String> mListQ ;
-   private int indexReponse;
+    private String mQuestion;
+    private List<String> mListQ;
+    private int indexReponse;
 
 
     public Question(String mQuestion, List<String> mListQ, int indexReponse) {

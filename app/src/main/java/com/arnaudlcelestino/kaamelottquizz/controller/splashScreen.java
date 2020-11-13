@@ -1,4 +1,4 @@
-package com.example.kaamelottquizz.controller;
+package com.arnaudlcelestino.kaamelottquizz.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.kaamelottquizz.R;
+import com.arnaudlcelestino.kaamelottquizz.R;
 
 public class splashScreen extends AppCompatActivity {
 
@@ -19,12 +19,12 @@ public class splashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         };
 
-        new Handler().postDelayed(runnable,3000);
+        new Handler().postDelayed(runnable, 3000);
     }
 }

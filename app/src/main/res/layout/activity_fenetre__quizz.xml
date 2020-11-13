@@ -16,15 +16,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/design_default_color_surface"
         android:fontFamily="casual"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="25dp"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/reponse1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"/>
     <Button
         android:id="@+id/reponse1"
         android:layout_width="wrap_content"
